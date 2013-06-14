@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Pilot"
+description: ""
+category: 
+tags: []
+---
+{% include JB/setup %}
+
+#Hello World
+
+This is a hello world post for the blog.
+
+this is a list
+ * Hello
+   * this is a subitem
+   * this is also a subitem
+ * this is a prent level item
+
+##this is a second level heading
+
+you can create a hyper [link][1] like this where the 1 denotes the number which may not be in series. You specify the url at the last of the document for easy use.
+
+
+[1]: http://google.com
