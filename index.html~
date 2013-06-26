@@ -1,10 +1,8 @@
 ---
-layout: page
-title: Blogs
-tagline: understanding will help
+layout: base
+title: home
 ---
-{% include JB/setup %}
-
+<h1>Pranjal Yadav</h1>
 
 Here are the posts.
 

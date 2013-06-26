@@ -2,7 +2,8 @@ lsi: false
 pygments: true
 exclude: README.markdown
 permalink: /:title.html
-markdown: maruku
+pagination: 10
+markdown: rdiscount
 title: Pranjal's blog
 author :
        name: Pranjal Yadav
