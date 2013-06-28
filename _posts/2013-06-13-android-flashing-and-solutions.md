@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Android ROM flashing and solutions.
 tagline: understanding Android
 tags: [Android, ROM, flashing, root]
@@ -38,18 +38,6 @@ Use GPRS to download the same from Android Market.
 
 Fill in the required settings. (Very easy)
 Enjoy running all the applications. (If still runs slow, check for your wifi network server load.)
-
-
-
-Here are the posts.
-
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
-
-
 
 
 [1]: http://forum.xda-developers.com/showthread.php?t=728929

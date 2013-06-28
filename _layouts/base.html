@@ -31,7 +31,7 @@
   <body>
     <div class="container">
 	<section class="name">
-	  <img src="/assets/images/images.jpeg" alt="logo" id="logo" align="bottom">
+	  <img src="/assets/images/logo.jpeg" alt="logo" id="logo" align="bottom">
 	  <a href="https://github.com/PranY/">Pranjal <b>Yadav</b>
 	  </a>
 	</section>
@@ -39,11 +39,14 @@
     <div class="navbar">
       <div class="navbar-inner">
         <div class="container-narrow">
-          <a class="brand" href="/">Home</a>
-          <ul class="nav">
+          <ul class="nav nav-tabs">
             {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
-          </ul>
+	    
+	    {% for item in  site.pages %}
+	    <li> <a href="{{ item.url }}">{{ item.title  | capitalize }}</a></li>
+	    {% endfor %}
+	  </ul>
         </div>
       </div>
     </div>
