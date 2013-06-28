@@ -2,7 +2,6 @@
 layout: base
 title: home
 ---
-<h1>Pranjal Yadav</h1>
 
 Here are the posts.
 
@@ -13,7 +12,6 @@ Here are the posts.
 	{{ post.date | date_to_string }}
       </span> &raquo; 
       <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-      {{ post.content | truncatewords: 30}}
     </li>
   {% endfor %}
 </ul>

@@ -69,5 +69,14 @@
     font-size: 30px;
     font-family: 'Avenir Next LT Pro, Regular';
     font-weight: normal;
+    color: #000000;
   }
 
+.name a:hover {
+    text-decoration: none;
+    color: rgb(0, 136, 204);
+}
+
+#logo {
+    align: top;
+}
