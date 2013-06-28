@@ -59,7 +59,7 @@ Procedure to flash XWJS7 2.2.1 (Stable Froyo) version on your Galaxy S GT I9000:
   * Phone -  PHONE_JPY.tar.md5
   * CSC -  CSC_XEE_JS1.tar.md5
 
-From the kernel downloaded and **DO NOT CLICK ON "RRE-PARTITION",**  hit Start
+From the kernel downloaded and **DO NOT CLICK ON "RE-PARTITION",**  hit Start
 
 * 8--As soon as you click on the Start option, the firmware will start updating in the device, please note that you don't unplug your device and ensure that you have continuous power because if in the between power goes off then your phone will become dead and then again you need to follow the procedure.
 * 9--As soon as the installation gets finished, the mobile will be rebooted and will take longer time than the normal reboot as this is the first time after the firmware upgrade the device is getting switched ON.
