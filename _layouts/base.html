@@ -42,7 +42,6 @@
           <ul class="nav nav-tabs">
             {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
-	    
 	    {% for item in  site.pages %}
 	    <li> <a href="{{ item.url }}">{{ item.title  | capitalize }}</a></li>
 	    {% endfor %}
@@ -52,7 +51,13 @@
     </div>
     
     <div class="container-narrow">
+<!--      <a href="#">
+	<img src="/assets/images/buttonl.jpg"   height="100" width="100" style="opacity:0.7;position:fixed;top:50%;left:10px;" ismap>
+      </a>
 
+      <a href="#">
+	<img src="/assets/images/buttonr.jpg"   height="100" width="100" style="opacity:0.7;position:fixed;top:50%;right:10px;" ismap>
+      </a> -->
       <div class="content">
         {{ content }}
       </div>

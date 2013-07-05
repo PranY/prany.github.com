@@ -3,6 +3,7 @@ layout: post
 title: Android ROM flashing and solutions.
 tagline: understanding Android
 tags: [Android, ROM, flashing, root]
+category: Android
 ---
 
 # Third Party Applications

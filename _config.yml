@@ -2,7 +2,7 @@ lsi: false
 pygments: true
 exclude: README.markdown
 permalink: /:title.html
-pagination: 10
+paginate: 3
 markdown: rdiscount
 title: Pranjal's blog
 author :
