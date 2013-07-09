@@ -5,8 +5,8 @@ description: "Pranjal Yadav "
 tagline: "- rookie developer"
 ---
 ### Academic qualifications
-* +2--Army school MHOW
-* B.Tech + M.TEch ( Materials Engg )* -- Indian Institute of Technology, Kharagpur
+* +2 -- Army school MHOW
+* B.Tech + M.Tech ( Materials Engg )* -- Indian Institute of Technology, Kharagpur
 
 ### Interests
 * Arts
