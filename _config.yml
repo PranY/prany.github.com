@@ -1,6 +1,5 @@
-lsi: false
-pygments: true
-exclude: README.markdown
+highlighter: pygments
+exclude: [README.markdown]
 permalink: /:title.html
 paginate: 3
 markdown: rdiscount
