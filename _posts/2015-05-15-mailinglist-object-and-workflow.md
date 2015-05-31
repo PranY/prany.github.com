@@ -2,7 +2,7 @@
 layout: post
 title: "Using ipython as prompt - Hack found"
 description: "Using ipython as prompt for handling mailman objects"
-category: "Notes"
+category: GSoC-Notes
 tags: [Mailman,Dlist,GSOC]
 ---
 
