@@ -10,7 +10,7 @@ To start with, I successfully completed all the segments of code under dynamic l
 The command runner was the source for my Dlist runner which was actually missing the Dlist rules I had designed earlier, this was happening because I misunderstood the message flow in pipelines. The new structure is as below
 
 <center>
-<img src="assets/images/flow.jpg" alt="Message Flow">
+<img src="assets/images/flow.png" alt="Message Flow">
 </center>
 
 #### Changes from previous implementation
