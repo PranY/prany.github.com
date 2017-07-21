@@ -1,17 +1,12 @@
-<<<<<<< HEAD
 ---
 layout: default
-=======
-l---
-layout: default
 title: home
->>>>>>> a46b169cdbeaf2d444e8bc609c235e345608fdbf
 ---
 
 
 <div id="content" class="content">
     <h3>Recent Posts</h3>
-    <ul class="category recent-posts">       
+    <ul class="category recent-posts">
         {% for post in site.posts limit:5  %}
         {% unless post.draft %}
 
@@ -40,7 +35,7 @@ title: home
     {% for category in sorted_cats %}
     {% assign sorted_posts = category[1] | reversed %}
     <h3 id="{{category[0] | uri_escape | downcase | slugify }}">{{category[0] | camelcase }}</h3>
-    <ul class="category {{category[0] | uri_escape | downcase | slugify}}">  
+    <ul class="category {{category[0] | uri_escape | downcase | slugify}}">
         {% for post in sorted_posts %}
         {% unless post.draft %}
 
