@@ -10,3 +10,4 @@ author :
        github: PranY
 description: This is the official blog!
 url: http://prany.github.io 
+theme: jekyll-theme-cayman
