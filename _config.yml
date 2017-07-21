@@ -1,12 +1,42 @@
-highlighter: pygments
-exclude: [README.markdown]
-permalink: /:title.html
-paginate: 3
-markdown: rdiscount
-title: Pranjal's blog
-author :
-       name: Pranjal Yadav
-       email: godricglow@gmail.com
-       github: PranY
-description: This is the official blog!
-url: http://prany.github.io 
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title:            Pranjal's Blog
+subtitle:         Understanding Matters
+description:      This is the official blog!
+keywords:         PranY
+language:         "en" # default language of the blog. Language codes: http://www.w3schools.com/tags/ref_language_codes.asp
+
+baseurl:          "" # the subpath of your site, e.g. /blog
+url:              http://prany.github.io # the base hostname & protocol for your site. Have a look at robots.txt as well!
+permalink:        /blog/:categories/:title
+cover:            /assets/cover.jpeg
+disqus_shortname: "PranY"
+
+# Build settings
+sass:
+    style: compressed
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+include: ['_pages']
+exclude: [vendor, "developer-tools"]
+plugins:
+  - jekyll-mentions
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  ignore:
+    envs: [local]
+  blanklines: true
+  startings: [head, body]

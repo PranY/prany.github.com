@@ -1,13 +1,16 @@
 ---
-layout: base
+layout: default
 ---
-<div class="page-header">
-  <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
-</div>
+<main class="content" role="main">
+    <article class="post single-post" itemscope itemtype="http://schema.org/BlogPosting">
+        <header class="post-header short-diver">
+            <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>           
+        </header>
+        <section class="post-content short-diver" itemprop="articleBody">
+            {{content}}
+        </section>
+    </article>
+</main>
 
-<div class="row-fluid">
-  <div class="span12">
-    {{ content }}
-  </div>
-</div>
-
+{% include photoswipe.html %}
+{% include post_scripts.html %}

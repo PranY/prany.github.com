@@ -1,0 +1,29 @@
+jdecent:
+    profile: "TBD."
+    skills:
+        - "Machine Learning, Deep Learning"
+        - "Python, R, Weka, Jupyter"
+        - "C++, HTML, CSS"
+        - "Adobe Photoshop, Illustrator"
+    education:
+        - time:             "2010 - 2015"
+          location:         "IIT Kharagpur"
+          description:      "B.Tech and M.Tech"
+    employment:
+        - time:             "10.2015 - 06.2017"
+          location:         "Gurgaon"
+          company:          "American Express"
+          position:         "Model Validator"
+          responsibilities:
+            - "Validate all machinea learning models"
+            - "Design new parameter tuning scripts"
+            - "ML R&D"
+        - time:             "07.2015 - 10.2015"
+          location:         "Noida"
+          company:          "Times Internet"
+          position:         "Asst. Product Manager"
+          responsibilities:
+            - "Improve CTR for Economic Times"
+            - "Improve a trading simulation game"
+            - "Increase user activity using CTR analysis and enhance Ad placement"
+    

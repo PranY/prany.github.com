@@ -1,68 +1,37 @@
 ---
-layout: base
+layout: default
 ---
-<div class="page-header">
-  <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
-</div>
+<main class="content" role="main">
+    <article class="post single-post" itemscope itemtype="http://schema.org/BlogPosting">
 
-<div class="row-fluid post-full">
-  <div class="span12">
-    <div class="date">
-      <span>{{ page.date | date_to_long_string }}</span>
-    </div>
-    <div class="content">
-      {{ content }}
-    </div>
-<!-- The categories and tag list will be updated later 
-  {% unless page.categories == empty %}
-    <ul class="tag_box inline">
-      <li><i class="icon-folder-open"></i></li>
-      {% assign categories_list = page.categories %}
-    </ul>
-  {% endunless %}  
+        <header class="post-header short-diver">
+            <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+            <section class="post-meta">
+                <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+                on
+                {% for tag in page.tags limit:5 %}
+                <span>{{ tag }}</span>
+                {% endfor %}
+            </section>
+        </header>
 
-  {% unless page.tags == empty %}
-    <ul class="tag_box inline">
-      <li><i class="icon-tags"></i></li>
-      {% assign tags_list = page.tags %}
-     
-    </ul>
-  {% endunless %}  
--->
-    <hr>
-    <div class="pagination">
-      <ul>
-      {% if page.previous %}
-        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
-      {% else %}
-        <li class="prev disabled"><a>&larr; Previous</a></li>
-      {% endif %}
+        <section class="post-content short-diver" itemprop="articleBody">
+            {{content}}
+        </section>
 
-      {% if page.next %}
-        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
-      {% else %}
-        <li class="next disabled"><a>Next &rarr;</a>
-      {% endif %}
-      </ul>
-    </div> 
-    <hr>
-  </div>
-  <div class="comments">      
-  <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'pranjalblog'; // required: replace example with your forum shortname
+        <footer class="post-footer">
+            {% include authorinfo.html param=page.author %}
+        </footer>
 
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-     
+        {% if page.comments %}
+    		<div class="comments">
+    			<a href="javascript:;" class="view-comments"><i class="fa fa-comments"></i>View Comments...</a>
+    			<div id="disqus_thread"></div>
+    		</div>
+    		{% endif %}
 
+    </article>
+</main>
 
-
-</div>
+{% include photoswipe.html %}
+{% include post_scripts.html %}
