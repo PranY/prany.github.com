@@ -6,22 +6,22 @@ category: "Deep Learning"
 tags: [Machine Learning, Deep Learning, ML, AI, DL]
 ---
 ## Introduction
-Deep Learning and AI were the buzz words for 2016 and at the mid of 2017, they have become more frequent and more confusing. So let's try an understand everything one at a time. We will look into the heart of Deep Learning i.e. Neural Networks (NNets). Most variants of NNets are hard to understand and the underlying architectural components make them all sound(theoretically) and look(graphically) the same.
+Deep Learning and AI were the buzz words for 2016; by the mid-2017, they have become more frequent and more confusing. So lets try and understand everything one at a time. We will look into the heart of Deep Learning i.e. Neural Networks (NNets). Most variants of NNets are hard to understand and the underlying architectural components make them all sound (theoretically) and look (graphically) the same.
 
-Thanks to Fjodor van Veen from The Asimov Institute, we have a fair representation of the most popular variants of NNet architectures. Please refer his [blog][1]. To improve our understanding of NNets we will study and implement one architecture every week. Below are the architectures we will be discussing over the next few weeks.
+Thanks to Fjodor van Veen from The Asimov Institute, we have a fair representation of the most popular variants of NNet architectures. Please refer to his [blog][1]. To improve our understanding of NNets, we will study and implement one architecture every week. Below are the architectures we will be discussing over the next few weeks.
 
 <center>
 <img src="/assets/images/neuralnetworks.png" alt="NNets">
 </center>
 
 #### Week 1
-The architecture for this week is **Convolutional Neural Network or CNN**. But to start with CNN we will first have a small deep dive into _Perceptrons_. NNet is a collection of several units/cells called perceptrons, these cells are binary linear classifiers. Lets take a quick look to understand the same.
+The architecture for this week is **Convolutional Neural Network or CNN**. But before starting CNN, we will first have a small deep dive into _Perceptrons_. NNet is a collection of several units/cells called perceptrons which are binary linear classifiers. Lets take a quick look to understand the same.
 
 <center>
 <img src="/assets/images/perceptron.png" alt="Perceptron">
 </center>
 
-Inputs `x1` and `x2` are multiplied with their respective weights w1 and w2 and summed together using function `f`, therefore `f = x1*w1 + x2*w2 + b`(bias term, optionally added). Now this function `f` can be any other operation but for perceptrons its generally a summation. This function `f` is then evaluated through a activation which allows the desired classification. Sigmoid function is the most common activation function used for binary classification. For any further details on perceptrons please refer [here][2].
+Inputs `x1` and `x2` are multiplied with their respective weights w1 and w2 and summed together using function `f`, therefore `f = x1*w1 + x2*w2 + b`(bias term, optionally added). Now this function `f` can be any other operation but for perceptrons its generally a summation. This function `f` is then evaluated through an activation which allows the desired classification. Sigmoid function is the most common activation function used for binary classification. For further details on perceptrons, I recommend this [article][2].
 
 Now if we stack multiple inputs and connect them using function `f` with multiple cells stacked in another layer, this forms multiple fully connected perceptrons, the output from these cells(_Hidden layer_) becomes input to the final cell which again uses function `f` and activation to derive final classification. This, as show below, is the **simplest Neural Network**.
 
