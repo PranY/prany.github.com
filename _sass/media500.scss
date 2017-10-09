@@ -72,8 +72,8 @@
     .single-post {
         img[src*='#right'], img[src*='#left'] {
             margin: 0;
-            float: none;
-            width: 100%;
+            float: auto;
+            width: auto;
             height: auto;
         }
 
