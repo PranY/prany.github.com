@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A deeper understanding of NNets part 2"
+title: "A deeper understanding of NNets (Part 2)"
 description: "Neural Networks are the core of the \"Deep Learning\" world and beyond. Let's understand them one at a time. "
 category: "Deep Learning"
 tags: [RNN, LSTM, Deep Learning, ML, AI, DL]
