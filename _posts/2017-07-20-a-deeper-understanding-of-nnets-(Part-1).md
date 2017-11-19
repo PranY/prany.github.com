@@ -10,7 +10,10 @@ Deep Learning and AI were the buzz words for 2016; by the mid-2017, they have be
 
 Thanks to Fjodor van Veen from The Asimov Institute, we have a fair representation of the most popular variants of NNet architectures. Please refer to his [blog][1]. To improve our understanding of NNets, we will study and implement one architecture every week. Below are the architectures we will be discussing over the next few weeks.
 
-![NNets](/assets/images/neuralnetworks.jpeg){:height=100% width=70%}
+<center>
+<img src="/assets/images/neuralnetworks.png" alt="NNets" width="40%">
+</center>
+
 
 #### Week 1
 The architecture for this week is **Convolutional Neural Network or CNN**. But before starting CNN, we will first have a small deep dive into _Perceptrons_. NNet is a collection of several units/cells called perceptrons which are binary linear classifiers. Lets take a quick look to understand the same.
@@ -23,7 +26,9 @@ Inputs `x1` and `x2` are multiplied with their respective weights w1 and w2 and 
 
 Now if we stack multiple inputs and connect them using function `f` with multiple cells stacked in another layer, this forms multiple fully connected perceptrons, the output from these cells(_Hidden layer_) becomes input to the final cell which again uses function `f` and activation to derive final classification. This, as show below, is the **simplest Neural Network**.
 
-![Neural Network](/assets/images/neural_net.jpeg){:height=100% width=70%}
+<center>
+<img src="/assets/images/neural_net.jpeg" alt="Neural Network" width="20%">
+</center>
 
 The topologies or architectural variants of NNets are diverse because of a unique capability of NNets called "_Universal Approximation function_". This in itself is a huge topic and is best covered by _Michael Nielsen_ [here][3]. After reading this we can rely on the fact that NNet can behave as any function no matter how complex. Above mentioned NNets is also referred to as Feed Forward Neural Network or FFNN, since the flow of information is uni-directional and not cyclic. Now that we know the basics of perceptron and FFNN, we can imagine hundreds of inputs connected to several such hidden layer, would form a complex network popular called Deep Neural Network or Deep Feed Forward Network.
 
@@ -35,7 +40,9 @@ The topologies or architectural variants of NNets are diverse because of a uniqu
 
 CNNs gained their popularity through competitions like ImageNet and more recently they are used for NLP and speech recognition as well. A critical point to remember is that many other variants like RNN, LSTM, GRU etc are based on a similar skeleton as that of CNNs but with some difference in architecture that makes them different. We will later discuss the differences in detail.
 
-![CNN](/assets/images/cnn.png){:height=50% width=50%}
+<center>
+<img src="/assets/images/cnn.png" alt="CNN" width="20%">
+</center>
 
 CNNs are formed using 3 types of layers namely "**Convolution**", "**Pooling**" and "**Dense or Fully connected**". Our previous NNets were a typical example of "Dense" layer NNets as all layers were fully connected. To know more about the need to switch to convolution and pooling layers, please read _Andrej Karpathy’s_ excellent explanation [here][4]. Continuing our discussion of layers, lets look at convolution layer.
 
