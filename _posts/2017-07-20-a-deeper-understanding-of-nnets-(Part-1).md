@@ -10,9 +10,7 @@ Deep Learning and AI were the buzz words for 2016; by the mid-2017, they have be
 
 Thanks to Fjodor van Veen from The Asimov Institute, we have a fair representation of the most popular variants of NNet architectures. Please refer to his [blog][1]. To improve our understanding of NNets, we will study and implement one architecture every week. Below are the architectures we will be discussing over the next few weeks.
 
-<center>
-<img src="/assets/images/neuralnetworks.png" alt="NNets">
-</center>
+![NNets](/assets/images/neuralnetworks.jpeg){:height=100% width=70%}
 
 #### Week 1
 The architecture for this week is **Convolutional Neural Network or CNN**. But before starting CNN, we will first have a small deep dive into _Perceptrons_. NNet is a collection of several units/cells called perceptrons which are binary linear classifiers. Lets take a quick look to understand the same.
