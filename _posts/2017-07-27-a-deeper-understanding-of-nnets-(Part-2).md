@@ -129,7 +129,7 @@ RNNs by default are trained stateless and we need to explicitly tell the network
 
 RNNs are powerful NNets not only because they are great at NLP, but in general RNNs dominate in more general purpose tasks. You can read "The Unreasonable Effectiveness of Recurrent Neural Networks" by Andrej Karpathy [here][2]. It explains RNNs' Turing-Complete ability and highlights the benefits of one/many to one/many network representation.
 
-In our next post, we will look at LSTMs and GRUs in detail and also explore Attention and Augmented RNNs.
+In the next post, we will look at LSTMs and GRUs in detail and also explore few LSTM variants.
 
 **Thank you for reading, I hope it helped**
 
