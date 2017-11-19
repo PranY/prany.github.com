@@ -36,13 +36,13 @@ Introduced by Bengio, et al. more than a decade ago, these are powerful represen
 <center>One Hot Encoding</center>
 </center>
 
-Although this looks simple and gets the job done, think of a scenario were our vocabulary has a Billion words, then we would need 1Bx1B matrix, which is extremely sparse and GIGANTIC in size. To solve this problem, we can develop word embeddings which are dense representation of the word along with its meaning, context, placement in sentence and much more. More technically, word embeddings are a parameterized function mapping in some language to high-dimensionality.
+Although this looks simple and gets the job done, think of a scenario where our vocabulary has a Billion words, then we would need 1Bx1B matrix, which is extremely sparse and GIGANTIC in size. To solve this problem, we can develop word embeddings which are dense representation of the word along with its meaning, context, placement in sentence and much more. More technically, word embeddings are a parameterized function mapping in some language to high-dimensionality.
 <center>
 <img src="/assets/images/wordembed.png" alt="Word Embeddings">
 <center>Word Embeddings</center>
 </center>
 
-There vectors are dense and allow for more information to be captured for every word, though the meaning of these vectors are a mystery, yet they are more likely to explain a word with better meaning given a large vocabulary set and the dimensionality of these embeddings can be as high as 200 to 500. We can set these embeddings as random and train on our corpus or we can choose transfer learning and utilize pre-trained word representation like Word2Vec and Glove. One thing we can do to understand these embeddings is use a dimensionality reduction technique called t-SNE which helps in visualizing high dimensional data.
+These vectors are dense and allow for more information to be captured for every word, though the meaning of these vectors are a mystery, yet they are more likely to explain a word with better meaning given a large vocabulary set and the dimensionality of these embeddings can be as high as 200 to 500. We can set these embeddings as random and train on our corpus or we can choose transfer learning and utilize pre-trained word representation like Word2Vec and Glove. One thing we can do to understand these embeddings is use a dimensionality reduction technique called t-SNE which helps in visualizing high dimensional data.
 
 <center>
 <img src="/assets/images/t-SNE.png" alt="Visual representation of word embeddings">
@@ -63,7 +63,7 @@ It is safe to assume that if a network is trained over a huge corpus, word embed
 ***
 #### Recurrent Neural Networks
 
-A simple RNN takes a word embedding as input, perform some matrix operations, achieves a interim output called _hidden state_ and then using an activation and _previous hidden state_ it outputs the prediction. Lets assume its a word prediction model and the current output from the model is the most probable word after the first input, so the output for word 'cat' should be 'ate'.
+A simple RNN takes a word embedding as input, perform some matrix operations, achieves an interim output called _hidden state_ and then using an activation and _previous hidden state_ it outputs the prediction. Lets assume its a word prediction model and the current output from the model is the most probable word after the first input, so the output for word 'cat' should be 'ate'.
 <center>
 <img src="/assets/images/RNNunfold1.png" alt="Single layer RNN">
 <center>Single layer of RNN.</center>
@@ -84,7 +84,7 @@ Elaborating on our previous example, the word embedding of cat (lets say `we{cat
 ***
 #### Exploding/vanishing gradients
 
-The major problem with RNNs is something called _vanishing gradient_, since it utilize the previous hidden state to predict current output, it back-propagates through all hidden states and following the chain rule, the gradients multiply at each iteration finally becoming approximately zero after 7 to 8 words. This doesn't allow the network to train as expected! Another variant of the same problem is _exploding gradient_ which occurs when the `weights` of the hidden states are greater than 1, back-propagating leads to infinitely huge values. However there is a simple solution proposed by researchers to avoid exploding gradients which is simply capping the value of gradients to a max. So the only problem we need to deal with is vanishing gradients. Lets welcome the two most popular variant of a RNN, LSTM (Long-Short-Term-Memory) and GRU (Gated Recurrent Unit) networks, we will discuss them in detail in the upcoming post. But before discussing LSTMs and GRUs lets fancy ourselves with Bi-Directional RNNs.
+The major problem with RNNs is something called _vanishing gradient_, since it utilizes the previous hidden state to predict current output, it back-propagates through all hidden states and following the chain rule, the gradients multiply at each iteration finally becoming approximately zero after 7 to 8 words. This doesn't allow the network to train as expected! Another variant of the same problem is _exploding gradient_ which occurs when the `weights` of the hidden states are greater than 1, back-propagating leads to infinitely huge values. However there is a simple solution proposed by researchers to avoid exploding gradients which is simply capping the value of gradients to a max. So the only problem we need to deal with is vanishing gradients. Lets welcome the two most popular variant of a RNN, LSTM (Long-Short-Term-Memory) and GRU (Gated Recurrent Unit) networks, we will discuss them in detail in the upcoming post. But before discussing LSTMs and GRUs lets fancy ourselves with Bi-Directional RNNs.
 <center>
 <img src="/assets/images/vanishinggradient.png" alt="Vanishing gradient">
 <center>Back propagation leading to vanishing gradients.</center>
