@@ -2,7 +2,7 @@
 layout: post
 title: "End notes and conclusion for Dynamic Sublists"
 description: "Overall implementation changes and end notes"
-category: 
+category: GSoC
 tags: [Dynamic sublist, Threads]
 ---
 Here is the much delayed blog I was supposed to put long ago but I could not for some reasons. So I will be clubbing all the info in this post and make this as my concluding post for GSoC 2015 under GNU Mailman.
