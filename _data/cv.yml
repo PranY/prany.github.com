@@ -6,10 +6,20 @@ jdecent:
         - "C++, HTML, CSS"
         - "Adobe Photoshop, Illustrator"
     education:
+        - time:             "2017 - Forever"
+          location:         "fast.ai"
+          description:      "Deep Learning practitioner"
         - time:             "2010 - 2015"
           location:         "IIT Kharagpur"
           description:      "B.Tech and M.Tech"
     employment:
+        - time:             "10.2017 - Present"
+          location:         "Hyderabad"
+          company:          "Amazon"
+          position:         "Data Scientist"
+          responsibilities:
+            - "Design ML solutions for Last Mile"
+            - "ML/DL R&D"
         - time:             "10.2015 - 06.2017"
           location:         "Gurgaon"
           company:          "American Express"
